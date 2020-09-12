@@ -6,7 +6,7 @@ const app = express();
 
 const port = process.env.PORT || 4201;
 
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist/bank-in-a-box'));
 
 app.get('/*', (req, res) => res.sendFile(path.join(__dirname)));
 
