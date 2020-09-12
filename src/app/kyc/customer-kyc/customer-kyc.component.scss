@@ -1,0 +1,29 @@
+.formBox .formBody .form-group { margin:0 0 20px 0; display: block;  padding: 0 10px; box-sizing: border-box; }
+.formBox .formBody .form-group.hide { display: none !important; }
+.formBox .formBody .form-control-wrap { position: relative; height: 40px;  border-bottom: 1px solid #cdd8e2; }
+.formBox .formBody .form-control-wrap .select-text { font-size: 15px; line-height: 40px; width: 100%; height: 40px; color: black;
+  padding-right: 24px; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-family: 'zurich_light_bt'; background-color: white;}
+.formBox .formBody .form-group select.form-control { position: absolute; opacity: 0; top: 0; left: 0; }
+.formBox .formBody .form-group .form-control { font-family: 'zurich_bold_bt'; border:none;  height: 40px; border-radius: 0; line-height: 40px; padding: 0; width: 100%; box-sizing: border-box;  outline: none; font-size: 15px; }
+.formBox .formBody .form-group .form-control[type='email'] { text-transform: lowercase;  }
+.form-control::-webkit-input-placeholder { text-transform: capitalize; font-family: 'zurich_light_bt';  }
+.form-control[type='email']::-webkit-input-placeholder {  text-transform: capitalize; }
+.form-control[type='email']::-moz-placeholder {  text-transform: capitalize; }
+.form-control[type='email']:-ms-input-placeholder { text-transform: capitalize; }
+.form-control[type='email']:-moz-placeholder { text-transform: capitalize; }
+
+.formBox .formBody .error { font-size: 14px; padding: 3px 0; color: #ed7e2f; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.formBox .formBody .btnWrap  {margin:50px -20px 0 -20px; }
+.formBox .formBody .btn { width: 100%; background: #003366; border: none; height: 92px; color: #ffffff; font-size: 24px; cursor: pointer; outline: none;}
+
+.formBox .checkboxWrap {  display:inline-block; margin:5px auto 15px auto; position:relative; padding: 0 10px; }
+.formBox .checkboxWrap label { color: white; padding-left:28px; position:relative;  cursor: position; display: block; font-family: 'zurich_light_bt';  }
+.formBox .checkboxWrap label .check { color: white; position:absolute; height:18px; width:18px; left:0px;  border:1px solid White; border-radius: 5px; }
+.formBox .checkboxWrap label .check:after { color: white; position:absolute; content:''; height:5px; width:12px;  color: white; border-left:2px solid White; border-bottom:2px solid White; transform:rotate(-45deg);  top:-6px; left:0; right:0; bottom:0; margin:auto; opacity:0;  }
+.formBox .checkboxWrap .checkbox { display:inline-block; position:absolute; color: white; opacity:0  }
+.formBox .checkboxWrap .checkbox:checked + label .check {  border:1px solid White; color: white;}
+.formBox .checkboxWrap .checkbox:checked + label .check:after { color: white; opacity:1 }
+
+.formBox .btnWrapper { margin-bottom: 10px; display: block; text-align: center; }
+.formBox .btnWrapper .getOffer {  height: 53px; width: 70%; background: #ed7e2f; color: #ffffff; font-size: 20px; border-radius:5px; text-transform: uppercase; margin: 0 auto; border: none; cursor:pointer; }

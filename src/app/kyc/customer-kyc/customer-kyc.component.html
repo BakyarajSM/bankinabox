@@ -1,0 +1,79 @@
+<div class="formBox">
+  <div class="formHeader">
+      <h3>
+          Please enter your details in the below given
+          from and we will contact you shortly.
+      </h3>
+
+  </div>
+  <div class="formBody">
+      <div class="form-group">
+          <div class="form-control-wrap">
+              <input id="txtName" name="Name" type="text" class="form-control name onlyAphabets" placeholder="Name" required="" autocomplete="password">
+              <div class="error"></div>
+          </div>
+      </div>
+      <div class="form-group">
+          <div class="form-control-wrap">
+              <input id="txtMobile" name="MobileNo" onchange="Javascript:SendSMS();" type="tel" class="form-control mobileNo" value="" maxlength="10" placeholder="Mobile Number" required="" autocomplete="password">
+              <div class="error"></div>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <div class="form-control-wrap">
+              <input id="txtEmail" name="EmailID" type="email" class="form-control" placeholder="Email ID" required="" autocomplete="password">
+              <div class="error"></div>
+          </div>
+      </div>
+      <div class="form-group">
+          <div class="form-control-wrap">
+              <input name="TxtPin" id="TxtPin" type="tel" autocomplete="nope" class="form-control onlyNumber" onchange="Javascript:GetBranchAddress()" maxlength="6" onkeypress="return /\d/.test(String.fromCharCode(((event||window.event).which||(event||window.event).which)));" pattern="[123456789]{1}[0-9]{5}" placeholder="Pin Code" required="">
+              <div class="error"></div>
+          </div>
+      </div>
+      <div class="form-group">
+          <div class="form-control-wrap">
+              <div class="select-text">Select Branch</div>
+              <select name="selBranch" id="selBranch" class="form-control selectCtrl" required="">
+                  <option value="">Select Branch</option>
+                  <option value="2000">Antwerp</option>
+                  <option value="1000">Brussels</option>
+                  <option value="1040">Etterbeek</option>                  
+              </select>
+              <div class="error"></div>
+          </div>
+      </div>
+
+      <!-- <div class="form-group Salaried">
+          <div class="form-control-wrap icons dob">
+              <input name="" type="text" id="txtDOB" class="form-control hasDatepicker"
+                  placeholder="Date of Birth" readonly="">
+              <div class="error"></div>
+          </div>
+      </div> -->
+
+      <div class="form-group">
+          <div class="form-control-wrap">
+              <input id="txtCity" name="City" type="text" class="form-control name onlyAphabets" placeholder="City" required="" autocomplete="password">
+              <div class="error"></div>
+          </div>
+      </div>
+
+
+     
+
+      <div class="checkboxWrap">
+          <input type="checkbox" class="checkbox" name="checkbox" value="" id="chbx" required="">
+          <label for="chbx">
+              <div class="check"></div>I authorize the Bank and its representatives to call/e-Mail/SMS/WhatsApp me regarding the Bank Gold Loan application
+          </label>
+          <div class="error"></div>
+      </div>
+
+      <div class="clr"></div>
+      <div class="btnWrapper">
+          <button id="btnGetOffers" class="getOffer" style="color: white; background-color:  green; width: 150px; height: 60px;" routerLink="/kycsubmit"> Submit </button>
+      </div>
+  </div>
+</div>

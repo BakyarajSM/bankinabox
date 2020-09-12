@@ -1,0 +1,44 @@
+<div class="col-lg-12 emi-content">
+    <div>
+        <h6 class="emi-header">Loan Detail</h6>
+    </div>
+    <div class="row">
+        <div class="col-lg-7">
+            <ejs-accumulationchart style="display: block;" #pieChart id="payment_pieChart" enableSmartLabels="true" [legendSettings]="legendSettings" height="365px" [width]="width" [tooltip]="tooltip" border="#27304c" background="#27304c" [series]='pieSeries' (load)='onLoad($event)' (pointRender)="pointRender($event)"></ejs-accumulationchart>
+        </div>
+        <div class="col-lg-5 pie-content" id="pieContent">
+            <div>
+                <p><span class="pie-icon pie-principal"></span>Total Value for {{principalValue}} grams of Gold </p>
+                <h5 id="loan_principal">{{principalAmt}} EUR</h5>
+            </div>
+            <div>
+                <p><span class="pie-icon pie-interest"></span>Total Interest</p>
+                <h5 id="loan_interest">{{interestAmt}} EUR</h5>
+            </div>
+            <div class="pie-total">
+                <span>
+                    <p>Eligible Loan Amount</p>
+                    <p>Max (50000)</p>
+                </span>
+                <h5 id="loan_total_payment">{{totalAmt}} EUR</h5>
+            </div>
+        </div>
+    </div>
+    <div>                
+        <h3 class="emi-footer">Note: This is the approximate Value. The final Value will depend upon the gold valuation done by our appraiser in the branch</h3>
+    </div>
+</div>
+
+
+<svg style="height: 0; display: block; width: 0;">
+    <defs>
+        <linearGradient id="principal_svg" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0"></stop>
+            <stop offset="1"></stop>
+        </linearGradient>
+        <linearGradient id="interest_svg" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0"></stop>
+            <stop offset="1"></stop>
+        </linearGradient>
+    </defs>
+</svg>
