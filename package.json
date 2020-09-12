@@ -61,6 +61,7 @@
         "build": "npm run scripts && gulp styles && gulp bundle",
         "scripts": "ngc -p tsconfig-aot.json",
         "bundle": "gulp bundle",
-        "ci-publish": "gulp publish-samples"
+        "ci-publish": "gulp publish-samples",
+        "start" : "ng serve"
     }
 }
