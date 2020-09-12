@@ -49,7 +49,7 @@
                         </td>
                         <td>
                             <div class="editor-space">
-                                <ejs-numerictextbox id="interest_txt" [(value)]="interestValue" [min]="interestNumMinValue" [max]="interestNumMaxValue" [step]="interestNumStep" [format]="interestNumFormat" [width]="interestNumWidth" (change)="interestNumChange($event)"></ejs-numerictextbox>
+                                <ejs-numerictextbox id="interest_txt" [enabled]="false" [(value)]="interestValue"  [format]="interestNumFormat" [width]="interestNumWidth" ></ejs-numerictextbox>
                             </div>
                         </td>
                     </tr>

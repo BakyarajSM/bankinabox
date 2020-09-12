@@ -65,7 +65,7 @@
 
 .emi-content {
   max-width: 634px;
-  height: 550px;
+  height: 650px;
   margin: 30px 0 25px 0;
   padding: 0 44px;
 }
@@ -502,7 +502,7 @@ body {
 
 .left-content {
   background-color: #27304c;
-  height: 550px;
+  height: 650px;
   margin: 25px 0;
   padding: 0 44px;
   border-right: 1px solid #475274;

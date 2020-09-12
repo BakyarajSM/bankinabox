@@ -79,20 +79,17 @@ export class InputComponent implements OnInit {
 
     // The interest Slider binding properties
     public interestValue: number = 0;
-    public interestMinValue: number = 7;
-    public interestMaxValue: number = 20;
-    public interestStep: number = .25;
-    public interestType: string = 'MinRange';
 
-    public interestChange(args: ChangeEventArgs): void {
-        this.data.interestValue = this.interestValue;
-        this.data.setInitValues();
-        this.data.updateTotalAmt();
-    }
 
-    public interestChanged(args: ChangeEventArgs): void {
-        this.data.refreshUI();
-    }
+    // public interestChange(args: ChangeEventArgs): void {
+    //     this.data.interestValue = this.interestValue;
+    //     this.data.setInitValues();
+    //     this.data.updateTotalAmt();
+    // }
+
+    // public interestChanged(args: ChangeEventArgs): void {
+    //     this.data.refreshUI();
+    // }
 
     // The loan Slider binding properties
     public loanValue: number = 0;
