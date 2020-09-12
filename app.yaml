@@ -1,0 +1,9 @@
+runtime: nodejs10
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+ static_files: bank-in-a-box/index.html
+ upload: bank-in-a-box/index.html
+- url: /
+static_dir: bank-in-a-box
