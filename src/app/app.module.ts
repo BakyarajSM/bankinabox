@@ -12,7 +12,6 @@ import { appRoutingModule } from './app-routing';
 import { DataService } from './data-service';
 import { CustomerKycComponent } from './kyc/customer-kyc/customer-kyc.component';
 import { KycsubmitComponent } from './kyc/kycsubmit/kycsubmit.component';
-//import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({

@@ -24,6 +24,7 @@
         "@syncfusion/ej2-ng-inputs": "*",
         "browser-sync": "2.11.2",
         "core-js": "^2.4.1",
+        "express": "^4.17.1",
         "gulp-print": "^2.0.1",
         "gulp-sass-lint": "^1.1.1",
         "gulp-tslint": "^7.0.1",
@@ -39,29 +40,27 @@
         "@angular/compiler-cli": "5.0.0",
         "@angular/platform-server": "5.0.0",
         "@types/jasmine": "^2.2.29",
-        "@types/requirejs": "^2.1.26",
         "@types/node": "^6.0.46",
-        "gulp": "^3.9.0",
-        "webpack": "2.5.1",
-        "shelljs": "^0.7.0",
-        "typescript": "~2.4.2",
-        "gulp-sass": "^3.1.0",
-        "gulp-clean": "^0.3.2",
-        "run-sequence": "2.2.0",
-        "webpack-stream": "^3.2.0",
-        "karma-systemjs": "^0.16.0",
-        "gulp-typescript": "^2.13.0",
+        "@types/requirejs": "^2.1.26",
         "es6-module-loader": "^0.17.11",
-        "systemjs-plugin-babel": "0.0.17"
+        "gulp": "^3.9.0",
+        "gulp-clean": "^0.3.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-typescript": "^2.13.0",
+        "karma-systemjs": "^0.16.0",
+        "run-sequence": "2.2.0",
+        "shelljs": "^0.7.0",
+        "systemjs-plugin-babel": "0.0.17",
+        "typescript": "~2.4.2",
+        "webpack": "^3.1.0",
+        "webpack-stream": "^3.2.0"
     },
-    "keywords": [
-
-    ],
+    "keywords": [],
     "scripts": {
         "build": "npm run scripts && gulp styles && gulp bundle",
         "scripts": "ngc -p tsconfig-aot.json",
         "bundle": "gulp bundle",
         "ci-publish": "gulp publish-samples",
-        "start" : "ng serve"
+        "start": "node server.js"
     }
 }

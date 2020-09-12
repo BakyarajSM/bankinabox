@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+//import { Customer } from '../customer-kyc';
 
 @Component({
   selector: 'app-customer-kyc',

@@ -1,8 +1,7 @@
 import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
 import { AccumulationChart, AccumulationLegend, PieSeries, AccumulationTooltip,
     AccumulationDataLabel,
-    Chart, LineSeries, DateTime, Legend, Tooltip, IAccLoadedEventArgs, AccumulationTheme, IAccPointRenderEventArgs,
-    StackingColumnSeries, Crosshair, DataLabel, ColumnSeries, IMouseEventArgs, Series
+    IAccLoadedEventArgs, AccumulationTheme, IAccPointRenderEventArgs,
 } from '@syncfusion/ej2-charts';
 import { AccumulationChartComponent } from '@syncfusion/ej2-ng-charts';
 import { DataService } from '../../data-service';

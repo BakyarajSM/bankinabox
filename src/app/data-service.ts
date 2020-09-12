@@ -1,12 +1,6 @@
 import { Injectable } from '@angular/core';
 
 import { Internationalization } from '@syncfusion/ej2-base';
-import {
-    AccumulationChart, AccumulationLegend, PieSeries, AccumulationTooltip,
-    AccumulationDataLabel, SeriesModel, Chart, LineSeries, DateTime, Legend, Tooltip, IAccLoadedEventArgs, AccumulationTheme, IAccPointRenderEventArgs,
-    StackingColumnSeries, Crosshair, DataLabel, ColumnSeries, IMouseEventArgs, Series
-} from '@syncfusion/ej2-charts';
-import { Grid, DetailRow } from '@syncfusion/ej2-grids';
 
 import { DashboardComponent } from './home/dashboard/dashboard.component';
 
@@ -36,7 +30,6 @@ export class DataService {
     public totalPrincipalYear: number = 0;
     public totalInterestYear: number = 0;
     public inter: number;
-    public dataUnits: [Object] = <[Object]>[];
     public dateObj: Date = new Date();
     public totalInterest: number = 0;
     public totalAmount: number = 0;

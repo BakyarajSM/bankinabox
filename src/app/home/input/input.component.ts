@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, OnInit, ViewChild } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 import { ChangeEventArgs } from '@syncfusion/ej2-inputs';
 import { DataService } from '../../data-service';
 
